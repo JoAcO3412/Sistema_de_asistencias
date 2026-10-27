@@ -1,0 +1,9 @@
+# NO instalar con "pip install -r requirements.txt" en Windows: face_recognition
+# intenta compilar dlib. Seguir los pasos de INSTALACION.md.
+opencv-python
+numpy
+dlib-bin
+face_recognition_models
+setuptools<81
+Click
+Pillow
