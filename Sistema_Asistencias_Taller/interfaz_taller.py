@@ -293,7 +293,7 @@ class App(tk.Tk):
         self.lbl_camara.configure(text="Cámara apagada") # Escribe el estado en la barra inferior
         self.mostrar_placeholder()    # Dibuja la foto falsa de la camarita en el espacio vacío
         self.actualizar_tabla()       # Dibuja los mecánicos leídos del CSV en la tabla de Tkinter
-        # Define el cartelote lateral de estado en CÁMARA APAGADA
+        # Define el cartel grande lateral de estado en CÁMARA APAGADA
         self.estado("CÁMARA APAGADA", "Presioná «Iniciar cámara» para comenzar", GRIS, BORDE)
         
         self.tick()                   # Llama por primera vez al reloj para que empiece el ciclo infinito de tiempo
@@ -844,6 +844,7 @@ class App(tk.Tk):
         self.lbl_video.configure(image=self.imagen_tk)
 
     # ---- Acciones de los botones ------------------------------------
+    
     def agregar_mecanico(self):
         # Si la cámara está apagada (.ultimo_cuadro vacío), frena la ejecución.
         if not self.corriendo or self.ultimo_cuadro is None:
