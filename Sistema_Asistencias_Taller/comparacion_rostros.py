@@ -10,6 +10,7 @@ import cv2                                # OpenCV: Librería maestra para leer,
 import face_recognition as fr             # Librería de IA para detectar rostros y compararlos matemáticamente
 
 # --- Configuracion -----------------------------------------------------------
+
 RUTA_CONTROL = 'Fotos_Prueba/FotoA.jpg'   # Ruta en el disco duro de la foto oficial del mecánico (la que ya sabemos que es él)
 RUTA_PRUEBA = 'Fotos_Prueba/FotoB.jpg'    # Ruta de la foto nueva que queremos verificar si pertenece al mecánico
 TOLERANCIA = 0.6                          # Límite matemático. Si la diferencia entre caras es menor a 0.6, es la misma persona.
@@ -77,6 +78,7 @@ def ajustar_tamano(imagen, alto_max=700):
 
 
 # --- Programa principal ------------------------------------------------------
+
 # 1. Carga las dos imágenes desde el disco duro a la memoria RAM
 foto_control = cargar_imagen(RUTA_CONTROL)
 foto_prueba = cargar_imagen(RUTA_PRUEBA)
