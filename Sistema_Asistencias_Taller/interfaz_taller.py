@@ -24,7 +24,7 @@ import face_recognition as fr             # Importa la Inteligencia Artificial q
 import numpy                              # Importa librería matemática de alto rendimiento para calcular distancias entre rostros
 from PIL import Image, ImageDraw, ImageFont, ImageTk # Importa Pillow para dibujar gráficos bonitos encima del video
 
-# Importa variables y funciones desde tu otro archivo "asistencia_taller.py"
+# Importa variables y funciones desde el otro archivo "asistencia_taller.py"
 from asistencia_taller import (ARCHIVO_REGISTRO, RUTA_MECANICOS, TOLERANCIA,
                                cargar_mecanicos, codificar, registrar_ingreso)
 
